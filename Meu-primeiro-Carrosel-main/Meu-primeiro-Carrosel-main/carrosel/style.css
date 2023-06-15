@@ -1,0 +1,85 @@
+section.slider{
+margin: 0 auto;
+width: 100%;
+height: auto;
+overflow: hidden;
+padding: 0 !important;
+}
+.slider-partes{
+
+width: 400%;
+height: auto;
+display: flex;
+
+
+}
+
+.slider-partes input, i{
+    display: none;
+}
+.slide-caixa{
+
+width: 25%;
+height: auto;
+position: relative;
+align-items: center;
+transition: 1s linear;
+
+}
+
+.slide-caixa img{
+    width: 100%;
+}
+/* bolinas */
+
+.navManual, .navautomatica{
+
+    position: absolute;
+    width: 100%;
+    margin-top: 35%;
+    justify-content: center;
+    display: flex;
+
+
+}
+
+.navManual .manuelaperta, .navautomatica div {
+
+border:  1px solid red;
+padding: 10px;
+border-radius: 50%;
+cursor: pointer;
+transition: 0.2s;
+
+}
+.navManual .manuelaperta:not(:last-child), .navautomatica div:not(:last-child) {
+
+    margin-right: 10px;
+}
+
+/* houver */
+
+.navManual .manuelaperta:hover {
+
+    background-color: red;
+}
+
+#radio1:checked ~ .navautomatica .auto-btn1{
+
+    background-color: red;
+}
+#radio2:checked ~ .navautomatica .auto-btn2{
+
+    background-color: red;
+}
+
+
+#radio1:checked ~ .primeira{
+
+    margin-left: 0%;
+}
+
+#radio2:checked ~ .primeira{
+
+    margin-left: -25%;
+}
